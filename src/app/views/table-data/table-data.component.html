@@ -1,0 +1,40 @@
+    <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-1wig">ID</th>
+        <th class="tg-1wig">First name</th>
+        <th class="tg-1wig">Last name</th>
+        <th class="tg-1wig">Birthday</th>
+        <th class="tg-1wig">Email</th>
+        <th class="tg-1wig">Login</th>
+        <th class="tg-1wig">Phone</th>
+        <th class="tg-1wig">Actions</th>
+        
+      </tr>
+    </thead>
+    
+    <tbody>
+      <ng-container *ngFor="let user of usersList">
+      <tr>
+        <th class="tg-1wig">{{user.id}}</th>
+        <td class="tg-0lax">{{user.firstName}}</td>
+        <td class="tg-0lax">{{user.lastName}}</td>
+        <td class="tg-0lax">{{user.birthDay}}</td>
+        <td class="tg-0lax">{{user.email}}</td>
+        <td class="tg-0lax">{{user.login}}n</td>
+        <td class="tg-0lax">{{user.phone}}</td>
+        <td class="tg-0lax">
+        <div class="example-button-container">
+          <button mat-icon-button color="warn" aria-label="Example icon button with a menu icon">
+            <mat-icon>delete</mat-icon>
+          </button>
+          <button mat-icon-button color="primary" aria-label="Example icon button with a heart icon">
+            <mat-icon>create</mat-icon>
+          </button>
+        </div>
+      </td>
+        
+      </tr>
+    </ng-container>
+    </tbody>
+    </table>
