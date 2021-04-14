@@ -1,4 +1,42 @@
-<h1 mat-dialog-title>Hi form</h1>
+<h1 mat-dialog-title>Novo usuário</h1>
+<div mat-dialog-content>
+  <form action="" class="user-form" [formGroup]="formUser">
+    <mat-form-field appearance="fill" class="user-form-field">
+      <mat-label>Primairo nome</mat-label>
+      <input matInput formControlName="firstName" name="firstName">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="user-form-field">
+      <mat-label>Ultímo nome</mat-label>
+      <input matInput formControlName="lastName" name="lastName">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="user-form-field">
+      <mat-label>Data de nascimento</mat-label>
+      <input matInput formControlName="birthDay" name="bisthDay">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="user-form-field">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" name="email">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="user-form-field">
+      <mat-label>Login</mat-label>
+      <input matInput formControlName="login" name="login">
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="user-form-field">
+      <mat-label>Senha</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text' " formControlName="password" name="password">
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="user-form-field">
+      <mat-label>Phone</mat-label>
+      <input matInput formControlName="phone" name="phone">
+    </mat-form-field>
+
+    <button mat-button (click)="saveUser()">Salvar</button>
+  </form>
+
+</div>
 <div mat-dialog-actions>
-  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button (click)="onNoClick()">Fechar</button>
 </div>

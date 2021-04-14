@@ -16,10 +16,10 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatDialogModule} from '@angular/material/dialog';  
 import {FormUserDialogComponent} from './views/form-user-dialog/form-user-dialog.component';
-import { MatNativeDateModule } from '@angular/material/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatNativeDateModule } from '@angular/material/core';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
-import { FormLoginDialogComponent } from './views/form-login-dialog/form-login-dialog.component';
+import {FormLoginDialogComponent } from './views/form-login-dialog/form-login-dialog.component';
 
 @NgModule({
   declarations: [
