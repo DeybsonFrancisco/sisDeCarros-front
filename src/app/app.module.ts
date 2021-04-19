@@ -20,6 +20,9 @@ import {MatNativeDateModule } from '@angular/material/core';
 import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {FormLoginDialogComponent } from './views/form-login-dialog/form-login-dialog.component';
+import { InfoUserDialogComponent } from './views/info-user-dialog/info-user-dialog.component';
+import {MatCardModule} from '@angular/material/card'; 
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import {FormLoginDialogComponent } from './views/form-login-dialog/form-login-di
     TableDataComponent,
     FormUserDialogComponent,
     FormLoginDialogComponent,
-    FormLoginDialogComponent
+    FormLoginDialogComponent,
+    InfoUserDialogComponent
 
     
   ],
@@ -48,7 +52,8 @@ import {FormLoginDialogComponent } from './views/form-login-dialog/form-login-di
     MatInputModule,
     MatNativeDateModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

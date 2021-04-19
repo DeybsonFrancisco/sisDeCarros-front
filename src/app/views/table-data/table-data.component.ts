@@ -23,7 +23,6 @@ export class TableDataComponent implements OnInit{
     return this.apiServiceUser.apiServiceGet("")
       .subscribe(data => {
                       this.usersList = data.content;
-                      console.log(this.usersList);
       });
   }
 }
